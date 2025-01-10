@@ -1,0 +1,115 @@
+/* General styles remain unchanged */
+
+.Main {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Initial downward offset */
+  transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition for visibility and position */
+}
+
+.Main.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
+}
+
+.main_left {
+  width: 45%;
+  margin-top: 3%;
+}
+
+.right_main {
+  width: 40%;
+}
+
+.it_is_me {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.names {
+  color: #03B0FD;
+  font-family: "Inder", sans-serif;
+  font-size: 60px;
+  text-align: left;
+  margin: 0;
+}
+
+.i_am_a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.follow_me {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+}
+
+.logos img {
+  height: 30px;
+  width: 30px;
+  margin: 0 7px;
+}
+
+.buttonb,
+.buttonc {
+  padding: 12.5px 30px;
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.buttonb {
+  border: 0;
+  background-color: #03b0fd;
+  color: #151925;
+}
+
+.buttonb:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.buttonb:active {
+  background-color: #3d94cf;
+  transform: scale(0.98);
+}
+
+.buttonc {
+  border: 2px solid #03b0fd;
+  background-color: #151925;
+  color: #03b0fd;
+}
+
+.buttonc:hover {
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.buttonc:active {
+  transform: scale(0.98);
+}

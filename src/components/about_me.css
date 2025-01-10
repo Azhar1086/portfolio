@@ -1,0 +1,108 @@
+/* Heading Styles */
+.heading {
+    color: #03B0FD; /* Accent color for heading */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem; /* Adjusted size for prominence */
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* About Me Left Section */
+.about_me_left {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9); /* Increased opacity for readability */
+    line-height: 1.8;
+    width: 60%; /* Increased width */
+    margin-right: 40px;
+    padding: 10px;
+}
+
+/* About Me Right Section */
+.about_me_right {
+    width: 35%; /* Adjusted width for a balanced look */
+    text-align: center;
+}
+
+/* About Me Info Section */
+.about_me_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px; /* Added spacing */
+    padding: 0 10%;
+}
+
+/* About Me Section with Animation */
+.about_me {
+    margin-top: 8%;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(40px); /* Initial position */
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out; /* Smooth animation */
+    background: linear-gradient(135deg, rgba(3, 176, 253, 0.8), rgba(0, 0, 0, 0.5)); /* Gradient background */
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Visible Class for Animation */
+.about_me.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to normal position */
+}
+
+/* Profile Image Styles */
+.profile_image {
+    width: 250px; /* Adjusted for better proportion */
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    color: #03B0FD;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile_image:hover {
+    transform: scale(1.1); /* Enlarges on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .about_me_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_me_left, .about_me_right {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .profile_image {
+        width: 200px; /* Responsive size */
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 2rem; /* Adjust for smaller screens */
+    }
+
+    .about_me_left {
+        font-size: 1rem; /* Adjust for smaller screens */
+    }
+
+    .about_me {
+        margin-top: 5%;
+    }
+}
